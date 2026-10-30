@@ -1,0 +1,26 @@
+[project]
+name = "lc"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "xiaoxin", email = "xiaoxin@codeffect.top" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "langchain>=1.4.7",
+    "langchain-community>=0.4.2",
+    "langchain-deepseek>=1.1.1",
+]
+
+[project.scripts]
+lc = "lc:main"
+
+[build-system]
+requires = ["uv_build>=0.13.6,<0.14.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "ruff>=0.17.3",
+]
